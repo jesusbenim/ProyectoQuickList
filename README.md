@@ -25,3 +25,20 @@ Proyecto desarrollado como Trabajo Final del ciclo de Desarrollo de Aplicaciones
 ## Estado del proyecto
 
 🚧 Proyecto académico finalizado y abierto a futuras mejoras y ampliaciones.
+
+## Capturas de pantalla
+
+### Pantalla principal
+![Pantalla principal]
+
+### Crear tema
+![Crear tema]
+
+### Crear tarea
+![Crear tarea]
+
+### Ranking
+![Ranking]
+
+### Premios
+![Premios]
