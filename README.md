@@ -29,7 +29,7 @@ Proyecto desarrollado como Trabajo Final del ciclo de Desarrollo de Aplicaciones
 ## Capturas de pantalla
 
 ### Pantalla principal
-![Pantalla principal]
+![Pantalla principal](Captura de pantalla 2026-07-02 a las 20.47.18.png)
 
 ### Crear tema
 ![Crear tema]
