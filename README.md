@@ -42,3 +42,11 @@ Proyecto desarrollado como Trabajo Final del ciclo de Desarrollo de Aplicaciones
 
 ### Premios
 ![Premios](premios.png)
+
+## Aprendizajes
+Durante el desarrollo del proyecto aprendí:
+- Gestión de datos en Firebase Firestore.
+- Navegación entre actividades y fragments.
+- Diseño de interfaces Android.
+- Gestión del estado de tareas y usuarios.
+- Trabajo con imágenes y almacenamiento.
