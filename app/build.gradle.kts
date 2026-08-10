@@ -46,13 +46,16 @@ dependencies {
     implementation("androidx.activity:activity:1.9.3")
     implementation("androidx.core:core-ktx:1.12.0")
     implementation("androidx.core:core:1.12.0")
+    implementation("com.google.android.material:material:1.11.0")
+    implementation("com.google.android.material:material:1.11.0")
 
     implementation(libs.androidx.constraintlayout)
 
+
     // 🔥 Firebase
-    implementation("com.google.firebase:firebase-auth:22.3.1")       // Autenticación
+    implementation("com.google.firebase:firebase-auth:22.3.1")
     implementation("com.google.firebase:firebase-firestore:24.10.0")
-    implementation(libs.androidx.activity) // Base de datos en la nube
+
 
     // Tests
     testImplementation(libs.junit)

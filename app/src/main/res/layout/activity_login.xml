@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -8,21 +9,23 @@
     android:padding="24dp"
     tools:context=".LoginActivity">
 
-    <TextView
-        android:text="Quicklist"
-        android:textSize="32sp"
-        android:textStyle="bold"
-        android:layout_marginBottom="32dp"
-        android:gravity="center"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+    <ImageView
+        android:id="@+id/logoImage"
+        android:layout_width="145dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="50dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="Logo QuickList"
+        android:scaleType="fitCenter"
+        android:src="@drawable/quicklist_logo" />
 
     <EditText
         android:id="@+id/emailEditText"
-        android:hint="Correo electrónico"
-        android:inputType="textEmailAddress"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:hint="Correo electrónico"
+        android:inputType="textEmailAddress" />
 
     <EditText
         android:id="@+id/passwordEditText"
@@ -37,12 +40,17 @@
         android:text="Iniciar sesión"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"/>
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@color/secondary"
+        android:textColor="@android:color/white"/>
 
     <Button
         android:id="@+id/registerButton"
         android:text="Registrarse"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:backgroundTint="@color/secondary"
+        android:textColor="@android:color/white"
         android:layout_marginTop="12dp"/>
+
 </LinearLayout>
