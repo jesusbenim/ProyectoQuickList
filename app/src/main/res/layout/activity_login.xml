@@ -14,11 +14,21 @@
         android:layout_width="145dp"
         android:layout_height="150dp"
         android:layout_marginTop="40dp"
-        android:layout_marginBottom="50dp"
+        android:layout_marginBottom="8dp"
         android:adjustViewBounds="true"
         android:contentDescription="Logo QuickList"
         android:scaleType="fitCenter"
         android:src="@drawable/quicklist_logo" />
+
+    <TextView
+        android:id="@+id/sloganTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:gravity="center"
+        android:text="@string/app_slogan"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="16sp" />
 
     <EditText
         android:id="@+id/emailEditText"
