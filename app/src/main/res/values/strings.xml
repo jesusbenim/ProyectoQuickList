@@ -5,4 +5,5 @@
     <string name="password_hint">Contraseña</string>
     <string name="login_button">Iniciar sesión</string>
     <string name="register_button">Registrarse</string>
+    <string name="forgot_password">¿Has olvidado tu contraseña?</string>
 </resources>
