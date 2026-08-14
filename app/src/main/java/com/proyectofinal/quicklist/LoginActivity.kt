@@ -8,6 +8,7 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
+import android.util.Patterns
 
 class LoginActivity : AppCompatActivity() {
 
@@ -51,8 +52,26 @@ class LoginActivity : AppCompatActivity() {
 
         // LOGIN
         loginButton.setOnClickListener {
-            val email = emailEditText.text.toString()
+            val email = emailEditText.text.toString().trim()
             val password = passwordEditText.text.toString()
+
+            if (email.isBlank()) {
+                emailEditText.error = "Introduce tu correo electrónico"
+                emailEditText.requestFocus()
+                return@setOnClickListener
+            }
+
+            if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
+                emailEditText.error = "Introduce un correo electrónico válido"
+                emailEditText.requestFocus()
+                return@setOnClickListener
+            }
+
+            if (password.isBlank()) {
+                passwordEditText.error = "Introduce tu contraseña"
+                passwordEditText.requestFocus()
+                return@setOnClickListener
+            }
 
             auth.signInWithEmailAndPassword(email, password)
                 .addOnCompleteListener { task ->
