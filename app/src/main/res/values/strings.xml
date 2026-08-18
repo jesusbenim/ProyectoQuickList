@@ -6,4 +6,7 @@
     <string name="login_button">Iniciar sesión</string>
     <string name="register_button">Registrarse</string>
     <string name="forgot_password">¿Has olvidado tu contraseña?</string>
+    <string name="error_email_vacio">Introduce tu correo electrónico</string>
+    <string name="error_email_invalido">Introduce un correo electrónico válido</string>
+    <string name="error_password_vacia">Introduce tu contraseña</string>
 </resources>
