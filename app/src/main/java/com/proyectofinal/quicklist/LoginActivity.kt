@@ -56,19 +56,19 @@ class LoginActivity : AppCompatActivity() {
             val password = passwordEditText.text.toString()
 
             if (email.isBlank()) {
-                emailEditText.error = "Introduce tu correo electrónico"
+                emailEditText.error = getString(R.string.error_email_vacio)
                 emailEditText.requestFocus()
                 return@setOnClickListener
             }
 
             if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
-                emailEditText.error = "Introduce un correo electrónico válido"
+                emailEditText.error = getString(R.string.error_email_invalido)
                 emailEditText.requestFocus()
                 return@setOnClickListener
             }
 
             if (password.isBlank()) {
-                passwordEditText.error = "Introduce tu contraseña"
+                passwordEditText.error = getString(R.string.error_password_vacia)
                 passwordEditText.requestFocus()
                 return@setOnClickListener
             }
