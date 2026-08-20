@@ -9,6 +9,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
 import android.util.Patterns
+import android.widget.TextView
 
 class LoginActivity : AppCompatActivity() {
 
@@ -27,6 +28,34 @@ class LoginActivity : AppCompatActivity() {
         val passwordEditText = findViewById<EditText>(R.id.passwordEditText)
         val loginButton = findViewById<Button>(R.id.loginButton)
         val registerButton = findViewById<Button>(R.id.registerButton)
+        val forgotPasswordTextView = findViewById<TextView>(R.id.forgotPasswordTextView)
+
+        forgotPasswordTextView.setOnClickListener {
+
+            val email = emailEditText.text.toString().trim()
+
+            if (email.isBlank()) {
+                emailEditText.error = "Introduce tu correo electrónico"
+                emailEditText.requestFocus()
+                return@setOnClickListener
+            }
+
+            auth.sendPasswordResetEmail(email)
+                .addOnSuccessListener {
+                    Toast.makeText(
+                        this,
+                        "Revisa tu correo para cambiar la contraseña",
+                        Toast.LENGTH_LONG
+                    ).show()
+                }
+                .addOnFailureListener { error ->
+                    Toast.makeText(
+                        this,
+                        "No se pudo enviar el correo: ${error.message}",
+                        Toast.LENGTH_LONG
+                    ).show()
+                }
+        }
 
         // REGISTRO
         registerButton.setOnClickListener {
